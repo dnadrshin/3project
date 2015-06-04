@@ -28,10 +28,6 @@
 		/*--------------------------- Стиль шапки ------------------------------*/
 		/*Логотип*/
 		.logo{
-			color: rgb(108, 162, 33);
-		  	text-transform: uppercase;
-		  	font-size: 30px;
-		  	letter-spacing:4px;
 		  	float: left;
 		  	overflow: hidden;
 		}
@@ -47,11 +43,10 @@
 			font-weight: bold;
 			font-size: 14px;
 			text-transform: uppercase;
-			border-radius: 4px;
-			background-image: -moz-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
-			background-image: -webkit-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
-			background-image: -ms-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
-			box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.004);
+			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			height: 62px;
 		}
 
 		ul{
@@ -61,8 +56,8 @@
 
 		nav li{
 			display: inline-block;
-			color: #838383;
-			padding: 0px 10px 0px 0px;
+			color: #fff;
+			padding: 8px 10px 0px 0px;
 		}
 
 		nav li:before{
@@ -75,7 +70,7 @@
 		}
 
 		nav li:first-child{
-			color: #8fc742;
+			color: #005c6d;
 		}
 
 		.first-header{
@@ -85,7 +80,6 @@
 		.first-header .container{	
 			padding-top: 20px;
 		}
-
 		/*--------------------------- Стиль подвала ------------------------------*/
 
 		footer{
@@ -222,8 +216,7 @@
 		.fototext h1{
 			font-size: 14px;
 			font-weight: bold;
-
-			color: rgb(108, 162, 33);
+			color: #00a8c6;
 		  	text-transform: uppercase;
 		}
 		/*Разделитель в статье*/	
@@ -234,23 +227,17 @@
 		/*Кнопка КУПИТЬ*/
 		.fototext button{
 			color: white;
-			background-image: -moz-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
-		  	background-image: -webkit-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
-		  	background-image: -ms-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
-		  	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
-		  	width: 170px;
-			height: 34px;
 			font-weight: bold;
 			text-transform: uppercase;
-			border-radius: 4px;
+			width: 220px;
 			border:1px;
-			margin: 1em 0;
+			margin: 1em 0 4em;
 		}
 		/*Пункт ЦЕНА в статье*/
 		.price{
 			margin: 1em 0;
 			font-size: 2em;
-			color: rgb(108, 162, 33);
+			color: #00a8c6;
 
 		}
 		/*Отступ текста*/
@@ -259,7 +246,7 @@
 		}
 		/*Стиль директории*/
 		.directory{
-			  font-size: 14px;
+			font-size: 14px;
 			display: inline-block;
 			float: right;
 			overflow: hidden;
@@ -269,7 +256,7 @@
 		}
 		/*Выбраная Подкатегория*/
 		.menuline .directory span{
-			color: rgb(108, 162, 33);
+			color: #00a8c6;
 			text-transform: none;
 			font-size: 14px;
 		}
@@ -280,7 +267,7 @@
 			left: 400px;
 		  	top: 400px;
 		  	width: 820px;
-		  	height: 340px;
+		  	height: 370px;
 		  	z-index: 3;
 		  	border-radius: 4px;
 		  	box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.25);
@@ -296,6 +283,7 @@
 			background-color:  #eff3f3;
 			font-size: 1em;
 			text-transform: none;
+			margin-top: 22px;
 		}
 		/*Кнопка закрытия окна*/
 		.x{
@@ -327,26 +315,34 @@
 			box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 			position: absolute;
 			width: 231px;
-			height: 33px;
+			height: 62px;
 			border-radius: 4px;
 			font-size: 28px;
 		}
+
+		.standart-btn{
+			vertical-align:middle; 
+			display: inline-block;
+			color: white;
+			text-transform: uppercase;
+			height: 62px;
+			font-size: 14px;
+			background-color: #00a8c6;
+			text-align: center;
+			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);		
+		}
+
 		/*Стиль кнопки*/
 		.menuline .codeinput button{
 			margin-top:0;
 			margin-right: 1em;
 			color: white;
-			background-image: -moz-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
-		  	background-image: -webkit-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
-		  	background-image: -ms-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
-		  	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 		  	width: 170px;
-			height: 34px;
 			font-weight: bold;
-			text-transform: uppercase;
-			border-radius: 4px;
 			border:1px;
-			
+			height: 62px;
 		}
 
 
@@ -394,21 +390,21 @@
 				<!-- Блок текста статьи -->
 				<div class="fototext">
 					<h1>Фото Коровы на лугу</h1>
-					<p>2456x2001px</p>
-					<p>8.2x6.7"@300.0 dpi</p>
+					<div class="">2456x2001px</div>
+					<div class="">8.2x6.7"@300.0 dpi</div>
 					<hr>
-					<p>ID зображения: 58108141</p>
-					<p>Автор:nenetus</p>
-					<p>Размещено: Nov.18,2014</p>
+					<div class="">ID зображения: 58108141</div>
+					<div class="">Автор:nenetus</div>
+					<div class="">Размещено: Nov.18,2014</div>
 					<hr>
-					<p>Для того, чтобы купить эту фотографию, вам необходимо отправить СМС на номер.<br>После отправки СМС на ваш номер придет сообщение с кодом. Для тго, чтобы скачать эту фотографию, вам необходимо купить подписку или кредиты. Цены на стоковые фотографии и векторные изображения начинаются от 10.22 руб. за изображение.</p>
+					<div class="">Для того, чтобы купить эту фотографию, вам необходимо отправить СМС на номер.<br>После отправки СМС на ваш номер придет сообщение с кодом. Для тго, чтобы скачать эту фотографию, вам необходимо купить подписку или кредиты. Цены на стоковые фотографии и векторные изображения начинаются от 10.22 руб. за изображение.</div>
 					<hr>
-					<p class="price">3000 Р</p>
-					<p><button>Купить</button></p>
+					<div class="price">3000 Р</div>
+					<p><button class="standart-btn">Купить</button></p>
 				</div>
 			</div>
 		</article>
-
+		
 <!-- Начало подвала -->
 		<footer>
 			<!-- Верхняя часть подвала -->
@@ -450,7 +446,7 @@
 					<div class="codeinput">
 							<span>Введите полученый код</span>
 							<input>
-							<button>Принять</button>
+							<button class="standart-btn">Принять</button>
 					</div>
 
 					<div class="x"><img src="img/x.png" alt="" ></div>
