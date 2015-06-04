@@ -86,12 +86,12 @@
 		}
 
 		.second-header{
-			text-align: left;
+			text-align: center;
 			font-size: 48px;
 		 	color: rgb(255, 255, 255);
 		  	font-weight: bold;
 		  	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-			height: 208px;
+			height: 300px;
 			clear: both;
 			background-size: cover;
 			background-image: url("img/header-bg.jpg");
@@ -113,21 +113,23 @@
 			
 		}
 
-		.second-header button{
-			float: right;0
+		.second-header button{	
 			overflow: hidden;
 			text-transform: uppercase;		
 			width: 268px;
 			border-width: 0;
 			font-weight: bold;		
-
-			margin-top: 70px;
+			margin-top: 10px;
 		}
 
 		.header-text{
-			float: left;
+			line-height: 1;
+			margin: auto;
+			color: #00a8c6;
+			clear: both;
+			font-size: 36px;
 			overflow: hidden;
-			width: 320px;
+			width: 700px;
 			text-transform: uppercase;
 			font-weight: bold;
 		}
@@ -354,9 +356,14 @@
 
 <!-- Начало блока шапки -->
 		<header>
+
+			<!-- Нижний блок шапки -->
+			<div class="second-header">
+				<div class="container">
+
 			<!-- Верхний блок шапки -->
 			<div class="first-header">
-				<div class="container">
+			
 					<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
 					<nav>
 						<ul>
@@ -364,13 +371,17 @@
 							<li>Каталог фото</li>
 						</ul>
 					</nav>	
-				</div>
+			
 			</div>
-			<!-- Нижний блок шапки -->
-			<div class="second-header">
-				<div class="container">
+
+
+
+
+
+
 					<div class="header-text">
 						Миллионы стоковых фотографий
+						о путешествиях по всему миру
 					</div>					
 					<button class="standart-btn">Перейти в каталог фото</div>				
 				</div>
