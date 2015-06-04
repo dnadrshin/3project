@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+		<title>foto.html</title>
+		<style type="text/css">
+		/* Стиль страницы */
+		body{
+			font-family: 'PT Sans', sans-serif;
+			width: 100%;
+			margin: 0;
+		}
+
+		/*Контейнер для вывода в центре страницы шириной 1155px по центру*/
+		.container{
+			width: 1155px;
+			margin: auto;
+			clear: both;
+		}
+
+		/*Для страниц менее 1155 пикселей*/
+		@media (max-width: 1155px) {
+		body{width: 1155px;}
+		}
+
+		/*--------------------------- Стиль шапки ------------------------------*/
+		/*Логотип*/
+		.logo{
+			color: rgb(108, 162, 33);
+		  	text-transform: uppercase;
+		  	font-size: 30px;
+		  	letter-spacing:4px;
+		  	float: left;
+		  	overflow: hidden;
+		}
+
+		header{
+			text-transform: uppercase;
+		}
+
+		/*Блок меню*/
+		nav{
+			float: right;
+			overflow: hidden;
+			font-weight: bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			border-radius: 4px;
+			background-image: -moz-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
+			background-image: -webkit-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
+			background-image: -ms-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
+			box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.004);
+		}
+
+		ul{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		nav li{
+			display: inline-block;
+			color: #838383;
+			padding: 0px 10px 0px 0px;
+		}
+
+		nav li:before{
+			content: "|";
+			padding-right: 10px;
+		}
+
+		nav li:first-child:before{
+			content: "";
+		}
+
+		nav li:first-child{
+			color: #8fc742;
+		}
+
+		.first-header{
+			height: 92px;
+		}
+
+		.first-header .container{	
+			padding-top: 20px;
+		}
+
+
+		/*--------------------------- Стиль подвала ------------------------------*/
+
+		footer{
+			padding-top: 20px;
+			height: 150px;
+			text-transform: uppercase;
+		}
+
+		/*Блок копирайта*/
+		div .support1{
+			font-size: 14px;
+			text-align: left;
+			float: left;
+			overflow: hidden;
+			clear: both;
+			margin-top: 22px;
+		}
+
+		/* Блок информации поддержки справа */
+		div .support2{	
+			height: 50px;
+			float: right;
+			overflow: hidden;
+		}
+
+		div .support2 span:first-child{
+			 font-size: 14px;
+			 font-weight: bold;
+		}
+
+		.support2 a {
+			text-transform: lowercase;
+			vertical-align:5px;
+		}
+
+		/* Иконки: телефон, емаил, твиттер - подгружаем спрайтами*/
+		.icons{
+			text-align: left;
+			display: inline-block;
+			content: "";
+			background-image: url(img/icons.png);
+		}
+
+		.phone{
+			width: 30px; 
+			height: 25px;
+			background-position: -10px 0px;	
+		}
+
+		.email{
+			width: 40px; 
+			height: 25px;
+			background-position: -40px 0px;
+		}
+
+		.twitter{
+			width: 40px; 
+			height: 25px;
+			background-position: -80px 0px;
+		}
+
+		/*-----------------Стиль карточек в центре страницы--------------------*/
+
+
+		article span{
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		/*Блок заголовка*/
+		.menuline{
+			position: relative;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			height: 40px;
+		}
+
+		/*Текст заголовка*/
+		.menuline span{
+			padding-right: 10px;
+			background-color: white;
+			display: inline-block;	
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+			z-index: 2;
+			position: relative;
+			margin-top: 5px;
+		}
+		/*Разделительная линия внутри статьи*/
+		hr{
+			clear: both;
+			height: 1px;
+			border-width:0px;
+			margin: 0px 10px;
+			display: inline-block;
+			width: 780px;
+			color: #dcdcdc;
+			background-color: #dcdcdc;
+		}
+		/*Разделительная линия*/
+		.menulinehr{
+			position: absolute;
+			top: 15px;
+			width: 1155px;
+			border-top: 1px;
+			z-index: 0;
+			height: 1px;
+			color: #dcdcdc;
+			background-color: #dcdcdc;
+		}
+		/*Блок текста статьи*/
+		.fototext{
+			width: 430px;
+			float: right;
+			overflow: hidden
+		}
+		/*Блок заголовка текста*/
+		.fototext h1{
+			font-size: 14px;
+			font-weight: bold;
+
+			color: rgb(108, 162, 33);
+		  	text-transform: uppercase;
+		}
+		/*Разделитель в статье*/	
+		.fototext hr{
+			width: 100%;
+			margin: 1em 0;
+		}
+		/*Кнопка КУПИТЬ*/
+		.fototext button{
+			color: white;
+			background-image: -moz-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
+		  	background-image: -webkit-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
+		  	background-image: -ms-linear-gradient( 90deg, #679a20 0%, #73a72c 100%);
+		  	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+		  	width: 170px;
+			height: 34px;
+			font-weight: bold;
+			text-transform: uppercase;
+			border-radius: 4px;
+			border:1px;
+			margin: 1em 0;
+		}
+		/*Пункт ЦЕНА в статье*/
+		.price{
+			font-size: 2em;
+			color: rgb(108, 162, 33);
+
+		}
+		/*Отступ текста*/
+		.fototext p{
+			margin: 0;
+		}
+		/*Стиль директории*/
+		.directory{
+			 font-size: 14px;
+			display: inline-block;
+			float: right;
+			overflow: hidden;
+			position: relative;
+			background-color: #fff;
+			padding-left: 10px;
+		}
+
+		.menuline .directory span{
+			color: rgb(108, 162, 33);
+			text-transform: none;
+			font-size: 14px;
+		}
+
+		</style>
+
+	</head>
+	<body>
+
+<!-- Начало блока шапки(шапка короткая) -->
+		<header>
+			<div class="first-header">
+				<div class="container">
+					<!-- Логотип -->
+					<div class="logo">EVROFOTOMIR+</div>
+					<!-- Меню -->
+					<nav>
+						<ul>
+							<li>Главная</li>
+							<li>Каталог фото</li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+<!-- Конец блока шапки -->
+
+ <!-- Блок статьи -->
+		<article>
+			<div class="container">
+				<!-- Блок Заголовка -->
+				<div class="menuline dir">					
+					<span>Фото коровы на лугу</span>
+					<div class="menulinehr"></div>
+					<!-- Блок Директории -->
+					<div class="directory">
+						<i>Главная - Каталог - <span>Подкатегория</span></i>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="container">
+				<!-- Картинка статьи -->
+				<img src="img/bigcowfoto.jpg" alt="">
+				<!-- Блок текста статьи -->
+				<div class="fototext">
+					<h1>Фото Коровы на лугу</h1>
+					<div class="">2456x2001px</div>
+					<div class="">8.2x6.7"@300.0 dpi</div>
+					<hr>
+					<div class="">ID зображения: 58108141</div>
+					<div class="">Автор:nenetus</div>
+					<div class="">Размещено: Nov.18,2014</div>
+					<hr>
+					<div class="">Для того, чтобы купить эту фотографию, вам необходимо отправить СМС на номер.<br>После отправки СМС на ваш номер придет сообщение с кодом. Для тго, чтобы скачать эту фотографию, вам необходимо купить подписку или кредиты. Цены на стоковые фотографии и векторные изображения начинаются от 10.22 руб. за изображение.</div>
+					<hr>
+					<div class="price">3000 Р</div>
+					<p><button>Купить</button></p>
+				</div>
+			</div>
+		</article>
+		
+<!-- Начало подвала -->
+		<footer>
+			<!-- Верхняя часть подвала -->
+			<div class="container first-header">			
+				<div class="logo">EVROFOTOMIR+</div>
+				<nav>
+					<ul>
+						<li>Главная</li>
+						<li>Каталог фото</li>
+					</ul>
+				</nav>	
+			</div>
+			<!-- Нижняя часть подвала -->
+			<div class="container">
+				<!-- Блок копирайта -->
+				<div class="support1">Evrofotomir&copy;2015</div>
+				<div class="support2">
+					<span>Служба поддержки клиента</span>
+					<div>
+					<!-- Блок контактов службы поддержки -->
+					<div class="icons phone"></div><a>+7(000) 00-000-00</a><div class="icons email"></div><a>evrofotomir@mail.ru</a><div class="icons twitter"></div><a>evrofotomir+</a>
+					</div>
+				</div>
+			</div>		
+		</footer>
+<!-- Конец подвала -->
+
+	</body>
+</html>

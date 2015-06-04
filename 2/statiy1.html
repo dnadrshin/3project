@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+		<title>statiy1.html</title>
+		<style type="text/css">
+		/* Стиль страницы */
+		body{
+			font-family: 'PT Sans', sans-serif;
+			width: 100%;
+			margin: 0;
+		}
+
+		/*Контейнер для вывода в центре страницы шириной 1155px по центру*/
+		.container{
+			width: 1155px;
+			margin: auto;
+			clear: both;
+		}
+
+		/*Для страниц менее 1155 пикселей*/
+		@media (max-width: 1155px) {
+		body{width: 1155px;}
+		}
+
+		/*--------------------------- Стиль шапки ------------------------------*/
+		/*Логотип*/
+		.logo{
+			color: rgb(108, 162, 33);
+		  	text-transform: uppercase;
+		  	font-size: 30px;
+		  	letter-spacing:4px;
+		  	float: left;
+		  	overflow: hidden;
+		}
+
+		header{
+			text-transform: uppercase;
+		}
+
+		/*Блок меню*/
+		nav{
+			float: right;
+			overflow: hidden;
+			font-weight: bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			border-radius: 4px;
+			background-image: -moz-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
+			background-image: -webkit-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
+			background-image: -ms-linear-gradient( 90deg, #e3e7e7 0%, #f0f3f3 100%);
+			box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.004);
+		}
+
+		ul{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		nav li{
+			display: inline-block;
+			color: #838383;
+			padding: 0px 10px 0px 0px;
+		}
+
+		nav li:before{
+			content: "|";
+			padding-right: 10px;
+		}
+
+		nav li:first-child:before{
+			content: "";
+		}
+
+		nav li:first-child{
+			color: #8fc742;
+		}
+
+		.first-header{
+			height: 92px;
+		}
+
+		.first-header .container{	
+			padding-top: 20px;
+		}
+		/*Блок с картинкой леса*/
+		.second-header{
+			text-align: left;
+			font-size: 48px;
+		 	color: rgb(255, 255, 255);
+		  	font-weight: bold;
+		  	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+			height: 208px;
+			clear: both;
+			background-size: cover;
+			background-image: url("img/header-bg.jpg");
+			padding-top: 20px;
+		}
+		/*Кнопка Блока с картинкой леса*/
+		.second-header button{
+			color: white;
+			float: right;
+			overflow: hidden;
+			text-transform: uppercase;	
+			font-size: 14px;
+			width: 268px;
+			height: 62px;
+			border-width: 0;
+			font-weight: bold;
+			border-radius: 4px;
+			background-image: -moz-linear-gradient( 90deg, #7dae31 0%, #5a9018 100%);
+			background-image: -webkit-linear-gradient( 90deg, #7dae31 0%, #5a9018 100%);
+			background-image: -ms-linear-gradient( 90deg, #7dae31 0%, #5a9018 100%);
+			box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.15);
+			margin-top: 70px;
+		}
+		/*Текст на картинке с лесом*/
+		.header-text{
+			float: left;
+			overflow: hidden;
+			width: 320px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		/*--------------------------- Стиль подвала ------------------------------*/
+
+		footer{
+			padding-top: 20px;
+			height: 150px;
+			text-transform: uppercase;
+		}
+
+		/*Блок копирайта*/
+		div .support1{
+			font-size: 14px;
+			text-align: left;
+			float: left;
+			overflow: hidden;
+			clear: both;
+			margin-top: 22px;
+		}
+
+		/* Блок информации поддержки справа */
+		div .support2{	
+			height: 50px;
+			float: right;
+			overflow: hidden;
+		}
+
+		div .support2 span:first-child{
+			 font-size: 14px;
+			 font-weight: bold;
+		}
+
+		.support2 a {
+			text-transform: lowercase;
+			vertical-align:5px;
+		}
+
+		/* Иконки: телефон, емаил, твиттер - подгружаем спрайтами*/
+		.icons{
+			text-align: left;
+			display: inline-block;
+			content: "";
+			background-image: url(img/icons.png);
+		}
+
+		.phone{
+			width: 30px; 
+			height: 25px;
+			background-position: -10px 0px;	
+		}
+
+		.email{
+			width: 40px; 
+			height: 25px;
+			background-position: -40px 0px;
+		}
+
+		.twitter{
+			width: 40px; 
+			height: 25px;
+			background-position: -80px 0px;
+		}
+
+		/*-----------------Стиль статьи в центре страницы--------------------*/
+
+		article span{
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		/*Блок заголовка*/
+		.menuline{
+			position: relative;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			height: 40px;
+		}
+
+		/*Текст заголовка*/
+		.menuline h1{
+			padding-right: 10px;
+			background-color: white;
+			display: inline-block;	
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+			z-index: 2;
+			position: relative;
+			margin-top: 5px;
+		}
+
+		/*Разделительная линия*/
+		.menulinehr{
+			position: absolute;
+			top: 15px;
+			width: 1155px;
+			border-top: 1px;
+			z-index: 0;
+			height: 1px;
+			color: #dcdcdc;
+			background-color: #dcdcdc;
+		}
+
+		/*Картинка статьи*/
+		article img{
+			float: left;
+			overflow: hidden;
+			margin-right: 1em;
+		}
+		/*Цвет даты*/
+		.data{
+			color: rgb(108, 162, 33);
+		}
+		/*Заголовок статьи*/
+		article h2{
+			font-size: 24px;
+			color: rgb(108, 162, 33);
+		  	text-transform: uppercase;
+		}
+
+
+		.allcont{	
+			height: 6em;
+		}
+
+		.allcont button{
+			margin-top: 2em;
+			color: rgb(108, 162, 33);
+			font-weight: bold;
+			text-transform: uppercase;
+			border-radius: 4px;
+			border:1px;
+			padding: 0px;
+			box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 1px 0px rgba(255, 255, 255, 0.004);
+			background: linear-gradient(to top, #f2f2f2, #fff);
+			width: 170px;
+			height: 34px;
+			float: right;
+			overflow: hidden;
+		}
+
+		</style>
+	</head>
+
+<!-- Начало блока шапки -->
+		<header>
+			<!-- Верхний блок шапки -->
+			<div class="first-header">
+				<div class="container">
+					<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+					<nav>
+						<ul>
+							<li>Главная</li>
+							<li>Каталог фото</li>
+						</ul>
+					</nav>	
+				</div>
+			</div>
+			<!-- Нижний блок шапки -->
+			<div class="second-header">
+				<div class="container">
+					<div class="header-text">
+						Миллионы стоковых фотографий
+					</div>					
+						<button>Перейти в каталог фото</button>				
+				</div>
+			</div>
+		</header>
+<!-- Конец блока шапки -->
+
+		<article>
+			<!-- Заголовок -->
+			<div class="container">
+				<div class="menuline">
+					<div class="menulinehr"></div>
+					<h1>Заголовок страницы</h1>
+				</div>
+			</div>
+			<!-- Конец заголовка -->
+			<!-- Блок статьи -->
+			<div class="container">
+					<img src="img/bigcow.jpg" alt="">
+					<p class="data">25.25.2525</p>
+						<section>
+							<h2>В тесте на экстремизм для подростков нашли экстремизм</h2>
+							<p>Прокуратура Челябинской области обнаружила экстремизм в тесте для выявления у восьмиклассников экстремистских наклонностей. Тестирование собиралось провести управление образования города Копейск.</p>
+							<p>В анкете, среди прочих, были следующие вопросы: «Должны ли народы проживать на своей исторической территории?», «Как вы относитесь к приезжим из других стран?», «Каким национальностям следует запретить въезд в Россию?» На последний вопрос среди ответов предлагались варианты: «евреи», «цыгане», «кавказцы» и другие.</p>
+							<p>После вмешательства прокуратуры администрация Копейска все-таки отказалась от тестирования, а начальнику управления образования города Александру Тутатчикову было объявлено предостережение.</p>
+						</section>
+
+			</div>
+		</article>
+		<!-- Блок кнопки ВСЕ СТАТЬИ -->
+		<div class="container">
+			<div class="allcont">
+				<button>Все статьи</button>
+			</div>
+		</div>
+
+<!-- Начало подвала -->
+		<footer>
+			<!-- Верхняя часть подвала -->
+			<div class="container first-header">			
+				<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+				<nav>
+					<ul>
+						<li>Главная</li>
+						<li>Каталог фото</li>
+					</ul>
+				</nav>	
+			</div>
+			<!-- Нижняя часть подвала -->
+			<div class="container">
+				<!-- Блок копирайта -->
+				<div class="support1">Evrofotomir&copy;2015</div>
+				<div class="support2">
+					<span>Служба поддержки клиента</span>
+					<div>
+					<!-- Блок контактов службы поддержки -->
+					<div class="icons phone"></div><a>+7(000) 00-000-00</a><div class="icons email"></div><a>evrofotomir@mail.ru</a><div class="icons twitter"></div><a>evrofotomir+</a>
+					</div>
+				</div>
+			</div>		
+		</footer>
+<!-- Конец подвала -->
+
+	</body>
+</html>
