@@ -29,6 +29,7 @@
 		.logo{
 		  	float: left;
 		  	overflow: hidden;
+		  	margin-left: 210px;
 		}
 
 		header{
@@ -42,9 +43,9 @@
 			font-weight: bold;
 			font-size: 14px;
 			text-transform: uppercase;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #96009c 0%, #96009c 50%, #a11aa6 51%, #a11aa6 100%);
+			background-image: -webkit-linear-gradient( 90deg, #96009c 0%, #96009c 50%, #a11aa6 51%, #a11aa6 100%);
+			background-image: -ms-linear-gradient( 90deg, #96009c 0%, #96009c 50%, #a11aa6 51%, #a11aa6 100%);
 			height: 62px;
 		}
 
@@ -69,7 +70,7 @@
 		}
 
 		nav li:first-child{
-			color: #005c6d;
+			color: #520056;
 		}
 
 		.first-header{
@@ -102,9 +103,9 @@
 			font-size: 14px;
 			background-color: #00a8c6;
 			text-align: center;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #96009c 0%, #96009c 50%, #a11aa6 51%, #a11aa6 100%);
+			background-image: -webkit-linear-gradient( 90deg, #96009c 0%, #96009c 50%, #a11aa6 51%, #a11aa6 100%);
+			background-image: -ms-linear-gradient( 90deg, #96009c 0%, #96009c 50%, #a11aa6 51%, #a11aa6 100%);
 			
 		}
 
@@ -114,24 +115,26 @@
 			width: 268px;
 			border-width: 0;
 			font-weight: bold;		
-			margin-top: 10px;
+			margin-top: 30px;
 		}
 
 		.header-text{
 			line-height: 1;
-			margin: auto;
-			color: #00a8c6;
+			margin-left: 100px;
+			color: #fff;
 			clear: both;
 			font-size: 36px;
 			overflow: hidden;
-			width: 700px;
+			width: 500px;
 			text-transform: uppercase;
-			font-weight: bold;
+			font-weight:normal;
 		}
 
 		/*--------------------------- Стиль подвала ------------------------------*/
 
 		footer{
+			background-color: #000;
+			color: #fff;
 			padding-top: 20px;
 			height: 150px;
 			text-transform: uppercase;
@@ -188,6 +191,10 @@
 			width: 40px; 
 			height: 25px;
 			background-position: -80px 0px;
+		}
+
+		footer .logo{
+			margin-left: 0;
 		}
 
 
@@ -260,12 +267,12 @@
 		}
 		/*Цвет даты*/
 		.data{
-			color: #00a8c6;
+			color: #a11aa6;
 		}
 		/*Заголовок статьи*/
 		article h2{
 			font-size: 24px;
-			color: #00a8c6;
+			color: #a11aa6;
 		  	text-transform: uppercase;
 		}
 
@@ -277,25 +284,28 @@
 
 <!-- Начало блока шапки -->
 		<header>
-			<!-- Общий блок шапки -->
+
+			<!-- Нижний блок шапки -->
 			<div class="second-header">
 				<div class="container">
+
 					<!-- Верхний блок шапки -->
 					<div class="first-header">
-							<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+							<div class="logo"><img src="img/logo.png" alt="logo"></div>
 							<nav>
 								<ul>
 									<li>Главная</li>
 									<li>Каталог фото</li>
 								</ul>
-							</nav>	
+							</nav>				
 					</div>
-					<!-- Нижний блок шапки -->
+
 					<div class="header-text">
-						Миллионы стоковых фотографий
-						о путешествиях по всему миру
+						Миллионы фотографий
+						красивых мадам
+						<button class="standart-btn">Перейти в каталог фото</button>
 					</div>					
-					<button class="standart-btn">Перейти в каталог фото</div>
+									
 				</div>
 			</div>
 		</header>
@@ -388,7 +398,7 @@
 		<footer>
 			<!-- Верхняя часть подвала -->
 			<div class="container first-header">			
-				<div class="logo">EVROFOTOMIR+</div>
+				<div class="logo"><img src="img/logo.png" alt="logo"></div>
 				<nav>
 					<ul>
 						<li>Главная</li>
