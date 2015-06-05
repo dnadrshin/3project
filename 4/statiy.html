@@ -24,6 +24,7 @@
 		body{width: 1155px;}
 		}
 
+
 		/*--------------------------- Стиль шапки ------------------------------*/
 		/*Логотип*/
 		.logo{
@@ -42,9 +43,9 @@
 			font-weight: bold;
 			font-size: 14px;
 			text-transform: uppercase;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -webkit-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -ms-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
 			height: 62px;
 		}
 
@@ -69,7 +70,7 @@
 		}
 
 		nav li:first-child{
-			color: #005c6d;
+			color: #7473b3;
 		}
 
 		.first-header{
@@ -81,12 +82,12 @@
 		}
 
 		.second-header{
-			text-align: center;
+			text-align: left;
 			font-size: 48px;
 		 	color: rgb(255, 255, 255);
 		  	font-weight: bold;
 		  	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-			height: 300px;
+			height: 225px;
 			clear: both;
 			background-size: cover;
 			background-image: url("img/header-bg.jpg");
@@ -102,9 +103,9 @@
 			font-size: 14px;
 			background-color: #00a8c6;
 			text-align: center;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -webkit-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -ms-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
 			
 		}
 
@@ -119,19 +120,22 @@
 
 		.header-text{
 			line-height: 1;
-			margin: auto;
-			color: #00a8c6;
+			color: #020074;
 			clear: both;
 			font-size: 36px;
 			overflow: hidden;
-			width: 700px;
+			width: 500px;
+			margin-top: 20px;
+			margin-bottom: 30px;
 			text-transform: uppercase;
-			font-weight: bold;
+			font-weight: normal;
 		}
 
 		/*--------------------------- Стиль подвала ------------------------------*/
 
 		footer{
+			background-color: #010023;
+			color: #fff;
 			padding-top: 20px;
 			height: 150px;
 			text-transform: uppercase;
@@ -260,12 +264,12 @@
 		}
 		/*Цвет даты*/
 		.data{
-			color: #00a8c6;
+			color: #020074;
 		}
 		/*Заголовок статьи*/
 		article h2{
 			font-size: 24px;
-			color: #00a8c6;
+			color: #020074;
 		  	text-transform: uppercase;
 		}
 
@@ -277,11 +281,9 @@
 
 <!-- Начало блока шапки -->
 		<header>
-			<!-- Общий блок шапки -->
-			<div class="second-header">
-				<div class="container">
-					<!-- Верхний блок шапки -->
+			<!-- Верхний блок шапки -->
 					<div class="first-header">
+						<div class="container">
 							<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
 							<nav>
 								<ul>
@@ -289,13 +291,16 @@
 									<li>Каталог фото</li>
 								</ul>
 							</nav>	
+						</div>
 					</div>
+			<div class="second-header">
+				<div class="container">
 					<!-- Нижний блок шапки -->
 					<div class="header-text">
-						Миллионы стоковых фотографий
-						о путешествиях по всему миру
+						Миллион фотографий
+						красивых мадам
 					</div>					
-					<button class="standart-btn">Перейти в каталог фото</button>
+					<button class="standart-btn">Перейти в каталог фото</button>				
 				</div>
 			</div>
 		</header>
@@ -388,7 +393,7 @@
 		<footer>
 			<!-- Верхняя часть подвала -->
 			<div class="container first-header">			
-				<div class="logo">EVROFOTOMIR+</div>
+				<div class="logo"><img src="img/logo2.png" alt="logo"></div>
 				<nav>
 					<ul>
 						<li>Главная</li>

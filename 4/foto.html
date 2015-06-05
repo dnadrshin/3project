@@ -3,7 +3,7 @@
 	<head>
 		<meta charset='utf-8'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-		<title>statiy1.html</title>
+		<title>foto.html</title>
 		<style type="text/css">
 		/* Стиль страницы */
 		body{
@@ -42,9 +42,9 @@
 			font-weight: bold;
 			font-size: 14px;
 			text-transform: uppercase;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -webkit-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -ms-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
 			height: 62px;
 		}
 
@@ -69,7 +69,7 @@
 		}
 
 		nav li:first-child{
-			color: #005c6d;
+			color: #7473b3;
 		}
 
 		.first-header{
@@ -77,19 +77,6 @@
 		}
 
 		.first-header .container{	
-			padding-top: 20px;
-		}
-
-		.second-header{
-			text-align: center;
-			font-size: 48px;
-		 	color: rgb(255, 255, 255);
-		  	font-weight: bold;
-		  	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-			height: 300px;
-			clear: both;
-			background-size: cover;
-			background-image: url("img/header-bg.jpg");
 			padding-top: 20px;
 		}
 
@@ -102,37 +89,20 @@
 			font-size: 14px;
 			background-color: #00a8c6;
 			text-align: center;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -webkit-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -ms-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
 			
 		}
 
-		.second-header button{	
-			overflow: hidden;
-			text-transform: uppercase;		
-			width: 268px;
-			border-width: 0;
-			font-weight: bold;		
-			margin-top: 10px;
-		}
-
-		.header-text{
-			line-height: 1;
-			margin: auto;
-			color: #00a8c6;
-			clear: both;
-			font-size: 36px;
-			overflow: hidden;
-			width: 700px;
-			text-transform: uppercase;
-			font-weight: bold;
-		}
 
 		/*--------------------------- Стиль подвала ------------------------------*/
 
 		footer{
+			background-color: #010023;
+			color: #fff;
 			padding-top: 20px;
+			margin-top: 130px;
 			height: 150px;
 			text-transform: uppercase;
 		}
@@ -190,7 +160,8 @@
 			background-position: -80px 0px;
 		}
 
-		/*-----------------Стиль статьи в центре страницы--------------------*/
+		/*-----------------Стиль карточек в центре страницы--------------------*/
+
 
 		article span{
 			font-size: 18px;
@@ -207,7 +178,7 @@
 		}
 
 		/*Текст заголовка*/
-		.menuline h1{
+		.menuline span{
 			padding-right: 10px;
 			background-color: white;
 			display: inline-block;	
@@ -218,7 +189,17 @@
 			position: relative;
 			margin-top: 5px;
 		}
-
+		/*Разделительная линия внутри статьи*/
+		hr{
+			clear: both;
+			height: 1px;
+			border-width:0px;
+			margin: 0px 10px;
+			display: inline-block;
+			width: 780px;
+			color: #dcdcdc;
+			background-color: #dcdcdc;
+		}
 		/*Разделительная линия*/
 		.menulinehr{
 			position: absolute;
@@ -230,104 +211,125 @@
 			color: #dcdcdc;
 			background-color: #dcdcdc;
 		}
-
-		/*Картинка статьи*/
-		article img{
-			float: left;
-			overflow: hidden;
-			margin-right: 1em;
+		/*Блок текста статьи*/
+		.fototext{
+			width: 430px;
+			float: right;
+			overflow: hidden
 		}
-		/*Цвет даты*/
-		.data{
-			color: #00a8c6;
-		}
-		/*Заголовок статьи*/
-		article h2{
-			font-size: 24px;
-			color: #00a8c6;
+		/*Блок заголовка текста*/
+		.fototext h1{
+			font-size: 14px;
+			font-weight: bold;
+			color: #020074);
 		  	text-transform: uppercase;
 		}
-
-
-		.allcont{	
-			height: 6em;
+		/*Разделитель в статье*/	
+		.fototext hr{
+			width: 100%;
+			margin: 1em 0;
 		}
-
-		.allcont button{
-			width: 223px;
-			margin-top: 2em;
-			color: #fff;
+		/*Кнопка КУПИТЬ*/
+		.fototext button{
+			color: white;
+		  	width: 170px;
 			font-weight: bold;
 			text-transform: uppercase;
 			border:1px;
-			padding: 0px;
+			margin: 1em 0 4em;
+		}
+		/*Пункт ЦЕНА в статье*/
+		.price{
+			font-size: 2em;
+			color: #020074;
+
+		}
+		/*Отступ текста*/
+		.fototext p{
+			margin: 0;
+		}
+		/*Стиль директории*/
+		.directory{
+			 font-size: 14px;
+			display: inline-block;
 			float: right;
 			overflow: hidden;
+			position: relative;
+			background-color: #fff;
+			padding-left: 10px;
+		}
+
+		.menuline .directory span{
+			color: #020074;
+			text-transform: none;
+			font-size: 14px;
 		}
 
 		</style>
-	</head>
 
-<!-- Начало блока шапки -->
+	</head>
+	<body>
+
+<!-- Начало блока шапки(шапка короткая) -->
 		<header>
-			<!-- Общий блок шапки -->
-			<div class="second-header">
+			<div class="first-header">
 				<div class="container">
-					<!-- Верхний блок шапки -->
-					<div class="first-header">
-							<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
-							<nav>
-								<ul>
-									<li>Главная</li>
-									<li>Каталог фото</li>
-								</ul>
-							</nav>	
-					</div>
-					<!-- Нижний блок шапки -->
-					<div class="header-text">
-						Миллионы стоковых фотографий
-						о путешествиях по всему миру
-					</div>					
-					<button class="standart-btn">Перейти в каталог фото</button>
+					<!-- Логотип -->
+					<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+					<!-- Меню -->
+					<nav>
+						<ul>
+							<li>Главная</li>
+							<li>Каталог фото</li>
+						</ul>
+					</nav>
+
 				</div>
 			</div>
 		</header>
 <!-- Конец блока шапки -->
 
+ <!-- Блок статьи -->
 		<article>
-			<!-- Заголовок -->
 			<div class="container">
-				<div class="menuline">
+				<!-- Блок Заголовка -->
+				<div class="menuline dir">					
+					<span>Фото коровы на лугу</span>
 					<div class="menulinehr"></div>
-					<h1>Заголовок страницы</h1>
+					<!-- Блок Директории -->
+					<div class="directory">
+						<i>Главная - Каталог - <span>Подкатегория</span></i>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="container">
+				<!-- Картинка статьи -->
+				<img src="img/bigcowfoto.jpg" alt="">
+				<!-- Блок текста статьи -->
+				<div class="fototext">
+					<h1>Фото Коровы на лугу</h1>
+					<div class="">2456x2001px</div>
+					<div class="">8.2x6.7"@300.0 dpi</div>
+					<hr>
+					<div class="">ID зображения: 58108141</div>
+					<div class="">Автор:nenetus</div>
+					<div class="">Размещено: Nov.18,2014</div>
+					<hr>
+					<div class="">Для того, чтобы купить эту фотографию, вам необходимо отправить СМС на номер.<br>После отправки СМС на ваш номер придет сообщение с кодом. Для тго, чтобы скачать эту фотографию, вам необходимо купить подписку или кредиты. Цены на стоковые фотографии и векторные изображения начинаются от 10.22 руб. за изображение.</div>
+					<hr>
+					<div class="price">3000 Р</div>
+					<p><button class="standart-btn">Купить</button></p>
 				</div>
 			</div>
-			<!-- Конец заголовка -->
-			<!-- Блок статьи -->
-			<div class="container">
-					<img src="img/bigcow.jpg" alt="">
-					<p class="data">25.25.2525</p>
-						<section>
-							<h2>В тесте на экстремизм для подростков нашли экстремизм</h2>
-							<p>Прокуратура Челябинской области обнаружила экстремизм в тесте для выявления у восьмиклассников экстремистских наклонностей. Тестирование собиралось провести управление образования города Копейск.</p>
-							<p>В анкете, среди прочих, были следующие вопросы: «Должны ли народы проживать на своей исторической территории?», «Как вы относитесь к приезжим из других стран?», «Каким национальностям следует запретить въезд в Россию?» На последний вопрос среди ответов предлагались варианты: «евреи», «цыгане», «кавказцы» и другие.</p>
-							<p>После вмешательства прокуратуры администрация Копейска все-таки отказалась от тестирования, а начальнику управления образования города Александру Тутатчикову было объявлено предостережение.</p>
-						</section>
-
-			</div>
 		</article>
-		<!-- Блок кнопки ВСЕ СТАТЬИ -->
-		<div class="container">
-			<div class="allcont">
-				<button class="standart-btn">Все статьи</button>
-			</div>
-		</div>
-
+		
 <!-- Начало подвала -->
 		<footer>
 			<!-- Верхняя часть подвала -->
 			<div class="container first-header">			
-				<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+				<div class="logo"><img src="img/logo2.png" alt="logo"></div>
 				<nav>
 					<ul>
 						<li>Главная</li>

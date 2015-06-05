@@ -3,7 +3,7 @@
 	<head>
 		<meta charset='utf-8'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-		<title>statiy.html</title>
+		<title>statiy1.html</title>
 		<style type="text/css">
 		/* Стиль страницы */
 		body{
@@ -42,9 +42,9 @@
 			font-weight: bold;
 			font-size: 14px;
 			text-transform: uppercase;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -webkit-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -ms-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
 			height: 62px;
 		}
 
@@ -69,7 +69,7 @@
 		}
 
 		nav li:first-child{
-			color: #005c6d;
+			color: #7473b3;
 		}
 
 		.first-header{
@@ -81,12 +81,12 @@
 		}
 
 		.second-header{
-			text-align: center;
+			text-align: left;
 			font-size: 48px;
 		 	color: rgb(255, 255, 255);
 		  	font-weight: bold;
 		  	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-			height: 300px;
+			height: 225px;
 			clear: both;
 			background-size: cover;
 			background-image: url("img/header-bg.jpg");
@@ -102,9 +102,9 @@
 			font-size: 14px;
 			background-color: #00a8c6;
 			text-align: center;
-			background-image: -moz-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -webkit-linear-gradient( 90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
-			background-image: -ms-linear-gradient(  90deg, #00a8c6 0%, #00a8c6 50%, #1ab1cc 51%, #1ab1cc 100%);
+			background-image: -moz-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -webkit-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
+			background-image: -ms-linear-gradient( 90deg, #020074 0%, #020074 50%, #1c1a82 51%, #1c1a82 100%);
 			
 		}
 
@@ -119,20 +119,24 @@
 
 		.header-text{
 			line-height: 1;
-			margin: auto;
-			color: #00a8c6;
+			color: #020074;
 			clear: both;
 			font-size: 36px;
 			overflow: hidden;
-			width: 700px;
+			width: 500px;
+			margin-top: 20px;
+			margin-bottom: 30px;
 			text-transform: uppercase;
-			font-weight: bold;
+			font-weight: normal;
 		}
 
 		/*--------------------------- Стиль подвала ------------------------------*/
 
 		footer{
+			background-color: #010023;
+			color: #fff;
 			padding-top: 20px;
+			margin-top: 30px;
 			height: 150px;
 			text-transform: uppercase;
 		}
@@ -189,9 +193,13 @@
 			height: 25px;
 			background-position: -80px 0px;
 		}
-
-
 		/*-----------------Стиль статьи в центре страницы--------------------*/
+
+		article span{
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
 
 		/*Блок заголовка*/
 		.menuline{
@@ -214,7 +222,6 @@
 			margin-top: 5px;
 		}
 
-
 		/*Разделительная линия*/
 		.menulinehr{
 			position: absolute;
@@ -226,32 +233,7 @@
 			color: #dcdcdc;
 			background-color: #dcdcdc;
 		}
-		/*Внутренняя часть блока статьи без кнопки ПОДРОБНО*/
-		.small-article{
-			float: left;
-			overflow: hidden;
-			width: 960px;
-			margin:1em 0 0 0;
-		}
-		/*Дата статьи*/
-		.small-article .data{
-			margin-top: 0;
-		}
-		/*Заголовок статьи*/
-		.small-article h2{
-			margin: 0.75em 0;
-		}
-		/*Кнопка ПОДРОБНО*/
-		.article-button button{
-		
-			font-weight: bold;
-			text-transform: uppercase;
-			border:1px;
-			padding: 20px;
-			margin-top: 60px;
-			float: right;
-			overflow: hidden;
-		}
+
 		/*Картинка статьи*/
 		article img{
 			float: left;
@@ -260,28 +242,40 @@
 		}
 		/*Цвет даты*/
 		.data{
-			color: #00a8c6;
+			color: #020074;
 		}
 		/*Заголовок статьи*/
 		article h2{
 			font-size: 24px;
-			color: #00a8c6;
+			color: #020074;
 		  	text-transform: uppercase;
 		}
 
+
+		.allcont{	
+			height: 6em;
+		}
+
+		.allcont button{
+			width: 223px;
+			margin-top: 2em;
+			color: #fff;
+			font-weight: bold;
+			text-transform: uppercase;
+			border:1px;
+			padding: 0px;
+			float: right;
+			overflow: hidden;
+		}
+
 		</style>
-
-
 	</head>
-	<body>
 
 <!-- Начало блока шапки -->
 		<header>
-			<!-- Общий блок шапки -->
-			<div class="second-header">
-				<div class="container">
-					<!-- Верхний блок шапки -->
+			<!-- Верхний блок шапки -->
 					<div class="first-header">
+						<div class="container">
 							<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
 							<nav>
 								<ul>
@@ -289,106 +283,55 @@
 									<li>Каталог фото</li>
 								</ul>
 							</nav>	
+						</div>
 					</div>
+			<div class="second-header">
+				<div class="container">
 					<!-- Нижний блок шапки -->
 					<div class="header-text">
-						Миллионы стоковых фотографий
-						о путешествиях по всему миру
+						Миллион фотографий
+						красивых мадам
 					</div>					
-					<button class="standart-btn">Перейти в каталог фото</button>
+					<button class="standart-btn">Перейти в каталог фото</button>				
 				</div>
 			</div>
 		</header>
 <!-- Конец блока шапки -->
 
-
-		<section>
+		<article>
 			<!-- Заголовок -->
-			<div>
-				<div class="container">
-					<div class="menuline">
+			<div class="container">
+				<div class="menuline">
 					<div class="menulinehr"></div>
-					<h1>Заголовок страницы</h1>	
-					</div>
+					<h1>Заголовок страницы</h1>
 				</div>
 			</div>
-			<!-- Конец заголовка -->	
+			<!-- Конец заголовка -->
 			<!-- Блок статьи -->
-			<article>
-				<div class="container">
-					<div class="small-article">
-						<!-- Картинка к статье -->
-						<img src="img/smallcow.jpg" alt="">
-						<!-- ДАТА -->
-						<p class="data">25.25.2525</p>
-						<!-- Текст статьи -->
-						<div>
-								<h2>В тесте на экстремизм для подростков нашли экстремизм</h2>
-								<p>Прокуратура Челябинской области обнаружила экстремизм в тесте для выявления у восьмиклассников экстремистских наклонностей. Тестирование собиралось провести управление образования города Копейск.</p>
-						</div>
-					</div>
-
-					<!-- Блок кнопки ПОДРОБНЕЕ -->
-					<div class="article-button">
-							<button class="standart-btn">Подробнее</button>
-					</div>
-					
-				</div>
-			</article>
-			<!-- Конец блока статьи -->
-
-			<!-- Разделитель между статьями -->
 			<div class="container">
-				<hr class="line">
-			</div>
-			
-			<article>
-				<div class="container">
-					<div class="small-article">
-						<img src="img/smallcow.jpg" alt="">
-						<p class="data">25.25.2525</p>
-						<div>
-								<h2>В тесте на экстремизм для подростков нашли экстремизм</h2>
-								<p>Прокуратура Челябинской области обнаружила экстремизм в тесте для выявления у восьмиклассников экстремистских наклонностей. Тестирование собиралось провести управление образования города Копейск.</p>
-						</div>
-					</div>					
-					<div class="article-button">
-							<button class="standart-btn">Подробнее</button>
-					</div>				
-				</div>
-			</article>
+					<img src="img/bigcow.jpg" alt="">
+					<p class="data">25.25.2525</p>
+						<section>
+							<h2>В тесте на экстремизм для подростков нашли экстремизм</h2>
+							<p>Прокуратура Челябинской области обнаружила экстремизм в тесте для выявления у восьмиклассников экстремистских наклонностей. Тестирование собиралось провести управление образования города Копейск.</p>
+							<p>В анкете, среди прочих, были следующие вопросы: «Должны ли народы проживать на своей исторической территории?», «Как вы относитесь к приезжим из других стран?», «Каким национальностям следует запретить въезд в Россию?» На последний вопрос среди ответов предлагались варианты: «евреи», «цыгане», «кавказцы» и другие.</p>
+							<p>После вмешательства прокуратуры администрация Копейска все-таки отказалась от тестирования, а начальнику управления образования города Александру Тутатчикову было объявлено предостережение.</p>
+						</section>
 
-			<div class="container">
-				<hr class="line">
 			</div>
-			
-			<article>
-				<div class="container">
-					<div class="small-article">
-						<img src="img/smallcow.jpg" alt="">
-						<p class="data">25.25.2525</p>
-						<div>
-								<h2>В тесте на экстремизм для подростков нашли экстремизм</h2>
-								<p>Прокуратура Челябинской области обнаружила экстремизм в тесте для выявления у восьмиклассников экстремистских наклонностей. Тестирование собиралось провести управление образования города Копейск.</p>
-						</div>
-					</div>					
-					<div class="article-button">
-							<button class="standart-btn">Подробнее</button>
-					</div>					
-				</div>
-			</article>
-
-			<div class="container">
-				<hr class="line">
+		</article>
+		<!-- Блок кнопки ВСЕ СТАТЬИ -->
+		<div class="container">
+			<div class="allcont">
+				<button class="standart-btn">Все статьи</button>
 			</div>
-
-		</section>
+		</div>
 
 <!-- Начало подвала -->
 		<footer>
 			<!-- Верхняя часть подвала -->
 			<div class="container first-header">			
-				<div class="logo">EVROFOTOMIR+</div>
+				<div class="logo"><img src="img/logo2.png" alt="logo"></div>
 				<nav>
 					<ul>
 						<li>Главная</li>
